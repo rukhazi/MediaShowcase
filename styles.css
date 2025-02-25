@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;  
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+    opacity: 80%;
+}
+
+#openingvideo{
+    margin-top: 80px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#openingp{
+    max-width: 80ch;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.gallery{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto;
+    max-width: 120ch;
+    padding: 30px;
+}
+
+.game{
+    padding: 20px;
+    background-color:#f9f1f1;
+    border-radius: 25px;
+}
+
+.gameimg{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+#blockblastimg{
+    margin-left: 35%;
+    width: 30%;
+    height: auto;
+    border-radius: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+    padding: 30px;
+}
+
+@media all and (max-width: 60ch){
+    .gallery{
+        grid-template-columns: auto;
+    }
+}
+
+@media all and (min-width: 120ch){
+    .gallery{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media all and (min-width: 1000px){
+    p,h2,h3{
+        font-size: 100%;
+    }
+    .gallery{
+        max-width: 120ch;
+    }
+}
